@@ -3,77 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-
+  <title>Alejandro Silva | Web Developer</title>
   <style>
+    :root {
+      --primary: #ff4f6d;
+      --secondary: #4f7cff;
+      --bg: #f5f5f7;
+      --text: #222;
+      --card-bg: #ffffff;
+    }
     body {
-      font-family: system-ui, sans-serif;
       margin: 0;
-      background: #f7f7f7;
-      color: #222;
-      line-height: 1.6;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
     }
     header {
-      padding: 4rem 2rem;
       text-align: center;
-      background: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 6rem 2rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
     }
-    h1 {
+    header h1 {
       font-size: 3rem;
-      margin-bottom: .5rem;
+      margin: 0 0 1rem;
+      font-weight: 800;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
     .section {
-      max-width: 700px;
-      margin: 3rem auto;
-      padding: 0 2rem;
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
     }
-    .project {
-      background: white;
-      padding: 1.5rem;
+    h2 {
+      font-size: 2rem;
       margin-bottom: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      font-weight: 700;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      margin-bottom: 1.5rem;
+    }
+    .projects .project-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
     }
     footer {
       text-align: center;
       padding: 2rem;
+      margin-top: 3rem;
       color: #555;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
     }
   </style>
 </head>
-
 <body>
+
+  <!-- HERO / TITLE SECTION -->
   <header>
-    <h1>Your Name</h1>
-    <p>Developer • Designer • Creator</p>
+    <h1>Alejandro Silva</h1>
+    <p>Web Developer • WordPress Specialist • JavaScript & React Builder</p>
   </header>
 
-  <div class="section">
+  <!-- ABOUT SECTION -->
+  <section class="section">
     <h2>About Me</h2>
-    <p>
-      Short description about who you are, what you do, and what you vibe with.
-    </p>
-  </div>
+    <div class="card">
+      <p>
+        I'm Alejandro, a web developer specializing in WordPress and custom front-end builds. I work with JavaScript, React, HTML, CSS, and PHP. I love creating clean, modern, and fun digital experiences.
+      </p>
+      <p>
+        Outside of coding, I'm into soccer, music, and gaming — they all inspire my creativity and how I approach my work.
+      </p>
+    </div>
+  </section>
 
-  <div class="section">
+  <!-- PROJECTS SECTION -->
+  <section class="section projects">
     <h2>Projects</h2>
-
-    <div class="project">
-      <h3>Project Name</h3>
-      <p>Quick description of the project.</p>
-      <a href="#">View Project →</a>
+    <div class="card">
+      <div class="project-title">Project Name 1</div>
+      <p>Short description of the project. You can update this later.</p>
     </div>
-
-    <div class="project">
-      <h3>Another Project</h3>
-      <p>Another quick description.</p>
-      <a href="#">View Project →</a>
+    <div class="card">
+      <div class="project-title">Project Name 2</div>
+      <p>Another brief description. Add links when ready.</p>
     </div>
-  </div>
+    <div class="card">
+      <div class="project-title">Project Name 3</div>
+      <p>Placeholder for a future project.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>If you want to reach out, feel free to contact me:</p>
+      <p><strong>Email:</strong> <a href="mailto:alejsilvadev@gmail.com">alejsilvadev@gmail.com</a></p>
+    </div>
+  </section>
 
   <footer>
-    © 2025 Your Name
+    © 2025 Alejandro Silva
   </footer>
+
 </body>
 </html>
